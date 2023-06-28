@@ -1,0 +1,14 @@
+<div class="container text-center">
+    <% @characters.each do |i| %>
+        <div class="row">
+            <div class="card text-bg-primary mb-3 col-3" style="max-width: 18rem;">
+                    <div class="card-header">Nombre: <%= "#{i.name}" %></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ubicacion: <%= "#{i.locatio}" %></h5>
+                            <p class="card-text">Casa:<%= "#{i.house}" %></p>
+                        </div>  
+                    </div>         
+            </div>
+        </div>
+    <% end%>
+</div>
